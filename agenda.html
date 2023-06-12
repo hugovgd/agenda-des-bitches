@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Les Agendas des bitches ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        
+        header {
+            background-color: #e0436b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        header:hover {
+            background-color: #c03957;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        
+        .frame-container {
+            height: calc(100vh - 80px); /* 80px is the height of the header */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .frame {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        .frame > div {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .frame h2 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Les Agendas des bitches ❤️</h1>
+    </header>
+    
+    <div class="frame-container">
+        <div class="frame">
+            <div id="url1">
+                <h2>Huguette 🌈</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FBrussels&src=aHVnby5saWNvcm5lQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZmFtaWx5MDI4NTgxMzA1MjI5MDY3MjUwNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%239E69AF&color=%23EF6C00&color=%23F4511E" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="url2">
+                <h2>Rox 💅</h2>
+              <iframe src="https://calendar.google.com/calendar/embed?src=roxanelebrun%40hotmail.fr&ctz=Europe%2FBrussels" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="url3">
+                <h2>Chulo 🐸</h2>
+            </div>
+            <div id="url4">
+                <h2>Trebil 🍒</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
