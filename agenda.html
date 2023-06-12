@@ -17,6 +17,7 @@
             text-align: center;
             transition: background-color 0.3s ease;
             cursor: pointer;
+            width: 100%; /* Ajout de la propriété pour la largeur */
         }
         
         header:hover {
@@ -37,8 +38,8 @@
         
         .frame {
             display: grid;
-            grid-template-columns: repeat(2, minmax(350px, 1fr)); /* Modifier la largeur minimale à 400px */
-            grid-template-rows: repeat(2, minmax(275px, 1fr)); /* Modifier la hauteur minimale à 300px */
+            grid-template-columns: repeat(2, minmax(350px, 1fr));
+            grid-template-rows: repeat(2, minmax(275px, 1fr));
             grid-gap: 20px;
             max-width: 100%;
             width: 100%;
