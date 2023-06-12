@@ -11,27 +11,45 @@
             background-color: #f7f7f7;
         }
         
-        header {
+        .navbar {
             background-color: #e0436b;
             color: #fff;
             padding: 20px;
             text-align: center;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            width: 100%; /* Ajout de la propriété pour la largeur */
+            width: 100%;
         }
         
-        header:hover {
-            background-color: #c03957;
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s ease;
+            position: relative;
         }
         
-        h1 {
-            margin: 0;
-            font-size: 32px;
+        .navbar a:hover {
+            color: #c03957;
+        }
+        
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+        
+        .navbar a:hover::after {
+            transform: scaleX(1);
         }
         
         .frame-container {
-            height: calc(100vh - 80px); /* 80px is the height of the header */
+            height: calc(100vh - 80px); /* 80px is the height of the navbar */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,9 +88,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Les Agendas des bitches ❤️</h1>
-    </header>
+    <div class="navbar">
+        <a href="https://example.com/commun.html">Commun</a>
+        <a href="https://hugovgd.github.io/agenda-des-bitches/individuel.html">Individuel</a>
+    </div>
     
     <div class="frame-container">
         <div class="frame">
